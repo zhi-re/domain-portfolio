@@ -1,0 +1,57 @@
+---
+---
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.domain }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+</head>
+
+<body>
+    <h3 class="page-head">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="{{ site.domain }} - {{ site.title }}" width="128">
+            <p><span class="ext">{{ site.title }}</span><span class="dot">&nbsp;·&nbsp;</span><span class="brand">{{
+                    site.title_ext }}</span>
+        </a></p>
+    </h3>
+    <p style="text-align: center;">联系方式：
+        {%- for contact in site.contacts -%}
+        <a href="{%- if contact.url -%}{{ contact.url }}{%- else -%}javascript:void(0){%- endif -%}">
+            <i class="{{ contact.icon }}"></i>
+            {{ contact.text }}</a>
+        {%- if forloop.last != true -%}&nbsp;·&nbsp;{%- endif -%}
+        {%- endfor -%}
+    </p>
+    <ul id="followers-list">
+        {%- for domain in site.domains -%}
+        <li>
+            <a href="javascript:void(0)"><img
+                    src="https://eu.ui-avatars.com/api/?background=random&amp;name={{ domain.domain | slice: 0 }}&amp;font-size=0.6"><strong>{{
+                    domain.domain }}</strong><span>{{domain.description}}{%- if domain.price -%}［{{domain.price}}］{%-
+                    endif
+                    -%}</span>
+            </a>
+        </li>
+        {%- endfor -%}
+    </ul>
+    <footer class="bg-gray-200 flex items-center px-10 py-5 flex justify-between flex-col lg:flex-row mt-16">
+        <div class="text-gray-500 text-sm text-center lg:text-left">
+            Copyright © 2022 {{site.domain}}. All rights reserved. <a class="text-gray-500"
+                href=" https://github.com/naiba/domain-portfolio">米表源码</a>
+        </div>
+    </footer>
+    <audio autoplay="autoplay" loop="loop">
+        <source src="https://assets.codepen.io/74321/short-snow_01.mp3">
+    </audio>
+</body>
+
+</html>

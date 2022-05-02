@@ -1,0 +1,53 @@
+domain: lajilao.com
+title: 垃圾佬
+title_ext: Just to show show
+
+contacts:
+  - icon: "fa fa-envelope"
+    url: "mailto:hi@nai.ba"
+    text: hi@nai.ba
+  - icon: "fa fa-qq"
+    text: 2088888812
+  # - icon: "fa fa-wechat"
+  #   text: 2088888812
+
+domains:
+  - domain: nai.ba
+    description: "@奶爸"
+  - domain: 5.nu
+    description: "@五哥"
+  - domain: nb2.com
+    description: "@奶把儿"
+  - domain: lifelonglearni.ng
+    description: "@终身学习"
+  - domain: git.cm
+    description: "@Git"
+  - domain: xzg.com.cn
+    description: "@小掌柜"
+  - domain: solitud.es
+    description: "@享受孤独"
+  - domain: naibahq.com
+    description: "@一般项目使用"
+  - domain: gg0.com
+    description: "@GG"
+  - domain: boringbay.com
+    description: "@无聊"
+  - domain: jf4.com
+    description: "@飓风"
+  - domain: gk4.com
+    description: "@果壳"
+  - domain: jg0.com
+    description: "@坚果"
+  - domain: pi4.com
+    description: "@皮"
+  - domain: jn4.com
+    description: "@解腻"
+  - domain: jh4.com
+    description: "@江湖"
+  - domain: oh1.com
+    description: "@欧耶✌️"
+  - domain: lajilao.com
+    description: "@垃圾佬"
+  - domain: p14yground.com
+    description: "@Playground"
+    price: 500w
