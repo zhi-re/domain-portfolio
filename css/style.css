@@ -158,7 +158,7 @@ li a span {
 .logo .dot {
 	font-family:"Quicksand","sans-serif";
 	font-size:42px;
-	color:#ffdb0c;
+	/* color:#ffdb0c; */
 	/*color:#707070;*/
 }
 .logo .title {
