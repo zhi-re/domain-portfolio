@@ -1,0 +1,73 @@
+{
+  "domain": "dt.td",
+  "title": "DT",
+  "title_ext": "TD",
+  "contacts": [
+    {
+      "icon": "fa fa-envelope",
+      "url": "mailto:i@0.cr",
+      "text": "i@0.cr"
+    },
+    {
+      "icon": "fa fa-qq",
+      "url": "#",
+      "text": 5998234
+    }
+  ],
+  "domains": [
+    {
+      "domain": "0.cr",
+      "domainUrl": "https://0.cr",
+      "description": "@零点超人",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=0&font-size=0.6"
+    },
+    {
+      "domain": "zhi.re",
+      "domainUrl": "https://zhi.re",
+      "description": "@炙热",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=Z&font-size=0.6"
+    },
+    {
+      "domain": "zhire.net",
+      "domainUrl": "https://zhire.net",
+      "description": "@炙热",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=Z&font-size=0.6"
+    },
+    {
+      "domain": "dt.td",
+      "domainUrl": "https://dt.td",
+      "description": "@动听土豆",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=D&font-size=0.6"
+    },
+    {
+      "domain": "107.ink",
+      "domainUrl": "http://107.ink",
+      "description": "@107",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=1&font-size=0.6"
+    },
+    {
+      "domain": "tool.sb",
+      "domainUrl": "https://tool.sb",
+      "description": "@工具",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=T&font-size=0.6"
+    },
+    {
+      "domain": "boxcyan.com",
+      "domainUrl": "http://boxcyan.com",
+      "description": "@青盒",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=B&font-size=0.6"
+    },
+    {
+      "domain": "maimai.org",
+      "domainUrl": "#",
+      "description": "@麦麦-过户中",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=M&font-size=0.6"
+    },
+    {
+      "domain": "chenqi.com.cn",
+      "domainUrl": "#",
+      "description": "@陈琦博客-过户中",
+      "imgUrl":"https://eu.ui-avatars.com/api/?background=random&name=C&font-size=0.6"
+    }
+  ]
+}

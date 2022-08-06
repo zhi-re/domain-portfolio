@@ -1,5 +1,3 @@
----
----
 <!doctype html>
 <html>
 
@@ -7,51 +5,71 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.domain }} - {{ site.title }}</title>
+    <title>dt.td</title>
     <link rel="stylesheet" href="css/style.css?220506">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <script src="./js/vue-2.5.21.js"></script>
+    <script src="./js/axios.js"></script>
 </head>
 
 <body>
+<div id="vue">
     <h3 class="page-head">
         <a href="/" class="logo">
-            <img src="img/logo.png" alt="{{ site.domain }} - {{ site.title }}" width="128">
-            <p><span class="ext">{{ site.title }}</span><span class="dot">·</span><span class="brand">{{
-                    site.title_ext }}</span>
+            <img src="img/logo.png" :alt="info.domain - info.title" width="128">
+            <p><span class="ext">{{ info.title }}</span><span class="dot">·</span><span class="brand">{{
+                    info.title_ext }}</span>
         </a></p>
     </h3>
     <p style="text-align: center;">联系方式：
-        {%- for contact in site.contacts -%}
-        <a href="{%- if contact.url -%}{{ contact.url }}{%- else -%}javascript:void(0){%- endif -%}">
-            <i class="{{ contact.icon }}"></i>
-            {{ contact.text }}</a>
-        {%- if forloop.last != true -%}&nbsp;·&nbsp;{%- endif -%}
-        {%- endfor -%}
+        <a href="mailto:i@0.cr"><i class="fa fa-envelope"></i> i@0.cr</a> ·
+        <a href="#"><i class="fa fa-qq"></i> 5998234</a>
     </p>
     <ul id="followers-list">
-        {%- for domain in site.domains -%}
-        <li>
-            <a href="javascript:void(0)"><img
-                    src="https://eu.ui-avatars.com/api/?background=random&amp;name={{ domain.domain | slice: 0 }}&amp;font-size=0.6"><strong>{{
-                    domain.domain }}</strong><span>{{domain.description}}{%- if domain.price -%}［{{domain.price}}］{%-
-                    endif
-                    -%}</span>
+        <li v-for="item in info.domains">
+            <a :href="item.domainUrl" target="_blank">
+                <img :src="item.imgUrl">
+                <strong>{{item.domain }}</strong>
+                <span>{{item.description}}</span>
             </a>
         </li>
-        {%- endfor -%}
     </ul>
     <footer class="bg-gray-200 flex items-center px-10 py-5 flex justify-between flex-col lg:flex-row mt-16">
-        <a title="无聊湾 🥱 The Boring Bay" href="https://boringbay.com" style="padding-bottom: 1rem;">
-            <img height="30rem" src="https://boringbay.com/api/badge/[domain]">
-        </a>
         <div class="text-gray-500 text-sm text-center lg:text-left">
-            Copyright © 2022 {{site.domain}}. All rights reserved. <a class="text-gray-500"
-                href=" https://github.com/naiba/domain-portfolio">米表源码</a>
+            Copyright © 2022 {{info.domain}}. All rights reserved.
+            <a class="text-gray-500" href="https://github.com/zhi-re/domain-portfolio">源码</a>
         </div>
     </footer>
+</div>
+
+<script type="text/javascript">
+    new Vue({
+        el: '#vue', data() {
+            return {
+                info:
+                    {
+                        "domain": null,
+                        "title": null,
+                        "title_ext": null,
+                        "domains": [
+                            {
+                                "domain": null,
+                                "domainUrl": null,
+                                "description": null,
+                                "imgUrl": null
+                            }
+                        ]
+                    }
+            }
+        },
+        mounted() {
+            axios.get('config.json').then(response => (this.info = response.data));
+        }
+    });
+</script>
 </body>
 
 </html>

@@ -1,57 +1,32 @@
-domain: lajilao.com
-title: 垃圾佬
-title_ext: 只想秀秀
+domain: dt.td
+title: 动听
+title_ext: 土豆
 
 contacts:
   - icon: "fa fa-envelope"
-    url: "mailto:hi@nai.ba"
-    text: hi@nai.ba
+    url: "mailto:i@0.cr"
+    text: i@0.cr
   - icon: "fa fa-qq"
-    text: 2088888812
+    text: 5998234
   # - icon: "fa fa-wechat"
   #   text: 2088888812
 
 domains:
-  - domain: nai.ba
-    description: "@奶爸"
-  - domain: 5.nu
-    description: "@Give me five✋"
-  - domain: nb2.com
-    description: "@奶把儿"
-  - domain: lifelonglearni.ng
-    description: "@终身学习"
-  - domain: git.cm
-    description: "@Git"
-  - domain: xzg.com.cn
-    description: "@小掌柜"
-  - domain: solitud.es
-    description: "@独居"
-  - domain: naibahq.com
-    description: "@一般项目使用"
-  - domain: gg0.com
-    description: "@GG"
-  - domain: boringbay.com
-    description: "@无聊"
-  - domain: jf4.com
-    description: "@飓风"
-  - domain: gk4.com
-    description: "@果壳"
-  - domain: jg0.com
-    description: "@坚果"
-  - domain: pi4.com
-    description: "@皮"
-  - domain: jn4.com
-    description: "@解腻"
-  - domain: jh4.com
-    description: "@江湖"
-  - domain: oh1.com
-    description: "@欧耶✌️"
-  - domain: lajilao.com
-    description: "@垃圾佬"
-  - domain: p14yground.com
-    description: "@Playground"
-    price: 500w
-  - domain: thebigpicture.cn
-    description: "@格局打开🫴"
-  - domain: qundao.com
-    description: "@群岛⛰️"
+  - domain: 0.cr
+    description: "@零点超人"
+  - domain: zhi.re
+    description: "@炙热"
+  - domain: zhire.net
+    description: "@炙热"
+  - domain: dt.td
+    description: "@动听土豆"
+  - domain: 107.ink
+    description: "@107"
+  - domain: tool.sb
+    description: "@工具"
+  - domain:  boxcyan.com
+    description: "@青盒"
+  - domain: maimai.org
+    description: "@麦麦-过户中"
+  - domain: chenqi.com.cn
+    description: "@陈琦博客-过户中"
